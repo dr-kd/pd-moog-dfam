@@ -27,6 +27,8 @@
 #X obj 278 16 adenv \$0-tick;
 #X obj 24 133 dosc \$0-tick;
 #X obj 255 72 dosc \$0-tick;
+#X floatatom 41 89 5 1 8 0 - - - 0;
+#X floatatom 431 34 5 1 8 0 - - - 0;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 4 0 7 0;
@@ -40,3 +42,5 @@
 #X connect 9 4 6 1;
 #X connect 10 0 2 0;
 #X connect 11 0 6 0;
+#X connect 12 0 10 1;
+#X connect 13 0 11 1;

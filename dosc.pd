@@ -24,9 +24,12 @@
 #X floatatom 28 -93 5 0 1 0 - - - 0;
 #X obj 57 -140 loadbang;
 #X msg 55 -115 0.3;
-#X obj 79 5 hsl 72 10 0.01 1 1 0 \$0-dec-mod empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 79 5 hsl 72 10 0.01 1 0 0 \$0-dec-mod empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 152 -159 r \$0-dec-mod;
 #X obj -21 -118 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 178 -121 inlet;
+#X obj 178 -96 s \$0-pow;
+#X obj -136 49 r \$0-pow;
 #X connect 0 0 8 0;
 #X connect 2 0 12 0;
 #X connect 3 0 4 0;
@@ -52,4 +55,6 @@
 #X connect 24 0 22 0;
 #X connect 26 0 22 0;
 #X connect 27 0 21 0;
+#X connect 28 0 29 0;
+#X connect 30 0 20 0;
 #X coords 0 -1 1 1 79 50 2 76 2;

@@ -134,7 +134,6 @@
 #X obj 117 10 r \$1;
 #X obj -9 272 r \$0-dec;
 #X obj -9 296 outlet;
-#X obj 31 345 print;
 #X connect 0 0 8 0;
 #X connect 1 0 11 0;
 #X connect 4 0 12 0;
@@ -158,5 +157,4 @@
 #X connect 22 0 8 0;
 #X connect 24 0 0 0;
 #X connect 25 0 26 0;
-#X connect 25 0 27 0;
 #X coords 0 -1 1 1 110 40 2 115 40;
