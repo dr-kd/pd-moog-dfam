@@ -1,4 +1,4 @@
-#N canvas 224 419 1117 430 12;
+#N canvas 77 155 1300 526 12;
 #N canvas 492 366 746 459 waves 0;
 #N canvas 179 204 450 278 (subpatch) 0;
 #X array square 1027 float 5;
@@ -39,12 +39,18 @@
 #X obj 122 189 s \$0-dec2;
 #X obj 197 189 s~ \$0-decenv2;
 #X obj 513 233 r~ \$0-osc2;
-#X obj 604 233 r~ \$0-decenv2;
+#X obj 599 225 r~ \$0-decenv2;
 #X obj 517 200 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #e3c6ff #000000 #000000 0 1;
 #X obj 580 293 *~;
 #X obj 730 201 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #e3c6ff #000000 #000000 0 1;
 #X obj 714 300 *~;
 #X obj 641 349 /~ 2;
+#X obj 930 234 noise~;
+#X obj 937 195 hsl 162 19 0 0.5 0 0 empty empty empty -2 -10 0 12 #e3c6ff #000000 #000000 0 1;
+#X obj 876 278 *~;
+#X obj 886 328 s~ \$0-noise;
+#X obj 412 232 r~ \$0-noise;
+#X obj 634 244 r~ \$0-noise;
 #X connect 2 0 26 0;
 #X connect 3 0 21 0;
 #X connect 3 1 22 0;
@@ -74,3 +80,8 @@
 #X connect 27 0 28 1;
 #X connect 28 0 29 0;
 #X connect 29 0 1 0;
+#X connect 30 0 32 0;
+#X connect 31 0 32 1;
+#X connect 32 0 33 0;
+#X connect 34 0 2 0;
+#X connect 35 0 12 0;
