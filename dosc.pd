@@ -1,8 +1,8 @@
 #N canvas 274 47 1134 521 12;
 #X obj 48 147 tabosc4~ square;
-#X floatatom 81 34 4 0 0 2 freq \$0-freq-in \$0-freq 10;
+#X floatatom 81 30 4 0 0 2 freq \$0-freq-in \$0-freq 10;
 #X obj -56 92 sig~;
-#X obj 111 31 hradio 19 1 0 2 empty empty \ ■\ \ ▶ 0 -8 0 12 #fcfcfc #000000 #000000 0;
+#X obj 111 28 hradio 19 1 0 2 empty empty \ ■\ \ ▶ 0 -8 0 12 #fcfcfc #000000 #000000 0;
 #X obj 110 72 moses 1;
 #X msg 83 104 set square;
 #X msg 184 105 set triangle;
@@ -20,9 +20,9 @@
 #X floatatom 28 -93 5 0 1 0 - - - 0;
 #X obj 57 -140 loadbang;
 #X msg 55 -115 0.3;
-#X obj 79 5 hsl 72 10 0.01 1 0 0 \$0-dec-mod empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 152 -159 r \$0-dec-mod;
-#X obj -21 -118 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 80 5 hsl 72 10 0.01 1 0 0 \$0-dec-mod empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj -51 -123 r \$0-dec-mod;
+#X obj -95 -90 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 178 -121 inlet;
 #X obj 178 -96 s \$0-pow;
 #X obj -136 49 r \$0-pow;
@@ -50,7 +50,8 @@
 #X connect 20 0 18 0;
 #X connect 22 0 18 0;
 #X connect 23 0 17 0;
+#X connect 23 0 13 0;
 #X connect 24 0 25 0;
 #X connect 26 0 16 0;
 #X connect 28 0 27 0;
-#X coords 0 -1 1 1 79 50 2 76 2;
+#X coords 0 -1 1 1 79 60 1 76 -12;
