@@ -19,7 +19,7 @@
 #X obj 642 396 out1~;
 #X obj 547 266 *~;
 #X obj 122 139 adenv \$0-tick;
-#X obj 363 74 adenv \$0-tick;
+#X obj 363 71 adenv \$0-tick;
 #X obj 24 133 dosc \$0-tick;
 #X obj 239 55 dosc \$0-tick;
 #X obj 551 29 dfamseq;
