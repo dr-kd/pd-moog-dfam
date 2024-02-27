@@ -1,4 +1,4 @@
-#N canvas 628 25 656 474 12;
+#N canvas 678 192 729 688 12;
 #X obj 56 35 inlet~;
 #X obj 119 34 inlet~;
 #X obj 188 24 inlet~;
@@ -27,7 +27,7 @@
 #X obj 46 286 hsl 162 19 0 1 0 0 \$0-osc1v empty Osc1 166 10 0 12 #e3c6ff #000000 #000000 0 1;
 #X obj 46 328 hsl 162 19 0 0.5 0 0 \$0-noisev empty Noise 166 10 0 12 #e3c6ff #000000 #000000 0 1;
 #X obj 274 205 r \$0-osc1v;
-#X obj 436 223 r $osc2v;
+#X obj 436 223 r \$0-osc2v;
 #X connect 0 0 4 0;
 #X connect 1 0 5 0;
 #X connect 2 0 6 0;
