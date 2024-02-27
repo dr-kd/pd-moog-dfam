@@ -1,0 +1,4 @@
+#N canvas 205 69 601 766 12;
+#X obj 130 23 main-dfam;
+#X obj 256 586 out1~;
+#X connect 0 0 1 0;
